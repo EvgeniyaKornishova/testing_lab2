@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Log3FunctionIntegrationTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2021-04-20T18:00:47" hostname="DESKTOP-BIQATCG" time="0.017">
+  <properties/>
+  <testcase name="log exception test()" classname="Log3FunctionIntegrationTest" time="0.001"/>
+  <testcase name="[1] 0.2" classname="Log3FunctionIntegrationTest" time="0.001"/>
+  <testcase name="[2] 0.4" classname="Log3FunctionIntegrationTest" time="0.0"/>
+  <testcase name="[3] 1.8" classname="Log3FunctionIntegrationTest" time="0.0"/>
+  <testcase name="[4] 2.0" classname="Log3FunctionIntegrationTest" time="0.0"/>
+  <testcase name="[5] 2.9" classname="Log3FunctionIntegrationTest" time="0.001"/>
+  <testcase name="[6] 3.9" classname="Log3FunctionIntegrationTest" time="0.0"/>
+  <testcase name="[7] 8.0" classname="Log3FunctionIntegrationTest" time="0.001"/>
+  <testcase name="[8] 10.0" classname="Log3FunctionIntegrationTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -4,6 +4,7 @@ import org.junit.jupiter.params.ParameterizedTest
 import org.junit.jupiter.params.provider.CsvFileSource
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.BeforeAll
+import org.junit.jupiter.api.Test
 import utils.CSV
 import utils.IntervalCalculator
 
@@ -27,7 +28,12 @@ class LnFunctionUnitTest {
 
     @ParameterizedTest
     @CsvFileSource(resources = ["/log.csv"])
-    fun `sin tests`(x: Double){
+    fun `ln tests`(x: Double){
         Assertions.assertEquals(kotlin.math.ln(x), ln(x), accuracy)
+    }
+
+    @Test
+    fun `log infinity test`(){
+        Assertions.assertEquals(Double.NEGATIVE_INFINITY, ln(0.0), accuracy)
     }
 }

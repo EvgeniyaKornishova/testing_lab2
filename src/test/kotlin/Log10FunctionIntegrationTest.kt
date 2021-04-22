@@ -55,6 +55,11 @@ class Log10FunctionIntegrationTest {
     }
 
     @Test
+    fun `log infinity test`(){
+        Assertions.assertEquals(Double.NEGATIVE_INFINITY, log10(0.0), accuracy)
+    }
+
+    @Test
     fun `log exception test`(){
         Assertions.assertThrows(IllegalArgumentException::class.java) {
             log10(-1.0)

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="SystemFunctionIntegrationTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-04-20T18:00:46" hostname="DESKTOP-BIQATCG" time="0.05">
+<testsuite name="SystemFunctionIntegrationTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-04-21T18:57:56" hostname="DESKTOP-BIQATCG" time="0.005">
   <properties/>
-  <testcase name="test negative and zero()" classname="SystemFunctionIntegrationTest" time="0.047"/>
+  <testcase name="test negative and zero()" classname="SystemFunctionIntegrationTest" time="0.003"/>
   <testcase name="test positive()" classname="SystemFunctionIntegrationTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

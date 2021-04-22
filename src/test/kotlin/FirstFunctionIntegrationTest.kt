@@ -14,7 +14,6 @@ import java.lang.IllegalArgumentException
 import kotlin.math.PI
 import kotlin.math.abs
 import kotlin.math.tan
-import kotlin.test.assertFailsWith
 
 class FirstFunctionIntegrationTest {
     companion object {

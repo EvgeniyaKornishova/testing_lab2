@@ -30,24 +30,26 @@ class FullIntegrationTest {
 
     @Test
     fun `system test`(){
+        // First function
         Assertions.assertEquals(-0.144337,  systemFunction(-5 * PI / 3  ), accuracy)
         Assertions.assertEquals(-3.854884,  systemFunction(-11 * PI / 12), accuracy)
         Assertions.assertEquals(0.0,        systemFunction(-PI / 2      ), accuracy)
         Assertions.assertEquals(0.193487,   systemFunction(-2 * PI / 5  ), accuracy)
         Assertions.assertEquals(-3.354884,  systemFunction(-PI / 12     ), accuracy)
 
-        assertFailsWith<IllegalArgumentException> {
+        Assertions.assertThrows(IllegalArgumentException::class.java){
             systemFunction(-2* PI)
         }
 
-        assertFailsWith<IllegalArgumentException> {
+        Assertions.assertThrows(IllegalArgumentException::class.java){
             systemFunction(-PI)
         }
 
-        assertFailsWith<IllegalArgumentException> {
+        Assertions.assertThrows(IllegalArgumentException::class.java){
             systemFunction(0.0)
         }
 
+        // Second function
         Assertions.assertEquals(1.13524,    systemFunction(0.2  ), accuracy)
         Assertions.assertEquals(3.07092,    systemFunction(0.4  ), accuracy)
         Assertions.assertEquals(-8.29507,   systemFunction(1.8  ), accuracy)

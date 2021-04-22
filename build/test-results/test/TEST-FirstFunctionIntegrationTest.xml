@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="FirstFunctionIntegrationTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2021-04-20T18:00:46" hostname="DESKTOP-BIQATCG" time="0.009">
+<testsuite name="FirstFunctionIntegrationTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2021-04-21T18:57:55" hostname="DESKTOP-BIQATCG" time="0.011">
   <properties/>
   <testcase name="test exceptions()" classname="FirstFunctionIntegrationTest" time="0.002"/>
-  <testcase name="test third part()" classname="FirstFunctionIntegrationTest" time="0.0"/>
+  <testcase name="test third part()" classname="FirstFunctionIntegrationTest" time="0.001"/>
   <testcase name="test first part()" classname="FirstFunctionIntegrationTest" time="0.001"/>
   <testcase name="test fourth part()" classname="FirstFunctionIntegrationTest" time="0.001"/>
   <testcase name="test extra point()" classname="FirstFunctionIntegrationTest" time="0.001"/>

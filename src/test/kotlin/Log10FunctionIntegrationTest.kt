@@ -23,7 +23,7 @@ class Log10FunctionIntegrationTest {
             val ln: Ln = Mockito.mock(Ln::class.java)
 
             fun ln_mock(x: Double): Double {
-                if (x < -accuracy)
+                if (x < 0.0)
                     throw IllegalArgumentException()
 
                 return kotlin.math.ln(x)

@@ -8,6 +8,6 @@ open class SystemFunction(
     private val secondFunction: SecondFunction = SecondFunction(accuracy)
 ): MathFunction(accuracy) {
     override fun invoke(x: Double): Double {
-        return if (x <= 0.0) firstFunction(x) else secondFunction(x)
+        return if (x <= accuracy) firstFunction(x) else secondFunction(x)
     }
 }

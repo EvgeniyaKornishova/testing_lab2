@@ -2,17 +2,15 @@ import functions.system.FirstFunction
 import functions.system.SecondFunction
 import functions.system.SystemFunction
 import org.junit.jupiter.api.AfterAll
-import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.BeforeAll
 import org.junit.jupiter.api.Test
 import org.mockito.Mockito
 import org.mockito.Mockito.mock
 import utils.CSV
 import utils.DotsCalculator
-import utils.IntervalCalculator
 import java.lang.IllegalArgumentException
 import kotlin.math.PI
-import kotlin.test.assertFailsWith
 
 class SystemFunctionIntegrationTest {
     companion object {
@@ -27,7 +25,7 @@ class SystemFunctionIntegrationTest {
 
             Mockito.`when`(firstFunction(-2*PI      )).thenThrow(IllegalArgumentException())
             Mockito.`when`(firstFunction(-5*PI/3    )).thenReturn(-0.144337)
-            Mockito.`when`(firstFunction(-PI           )).thenThrow(IllegalArgumentException())
+            Mockito.`when`(firstFunction(-PI        )).thenThrow(IllegalArgumentException())
             Mockito.`when`(firstFunction(-11*PI/12  )).thenReturn(-3.854884)
             Mockito.`when`(firstFunction(-PI/2      )).thenReturn(0.0)
             Mockito.`when`(firstFunction(-2*PI/5    )).thenReturn( 0.193487)
@@ -66,37 +64,38 @@ class SystemFunctionIntegrationTest {
 
     @Test
     fun `test negative and zero`(){
-        assertEquals(-0.144337, systemFunction(-5*PI/3  ), accuracy)
-        assertEquals(-3.854884, systemFunction(-11*PI/12), accuracy)
-        assertEquals(0.0,       systemFunction(-PI/2    ), accuracy)
-        assertEquals(0.193487,  systemFunction(-2*PI/5  ), accuracy)
-        assertEquals(-3.354884, systemFunction(-PI/12   ), accuracy)
+        Assertions.assertEquals(-0.144337, systemFunction(-5*PI/3  ), accuracy)
+        Assertions.assertEquals(-3.854884, systemFunction(-11*PI/12), accuracy)
+        Assertions.assertEquals(0.0,       systemFunction(-PI/2    ), accuracy)
+        Assertions.assertEquals(0.193487,  systemFunction(-2*PI/5  ), accuracy)
+        Assertions.assertEquals(-3.354884, systemFunction(-PI/12   ), accuracy)
 
-        assertFailsWith<IllegalArgumentException> {
+
+        Assertions.assertThrows(IllegalArgumentException::class.java){
             systemFunction(-2*PI)
         }
 
-        assertFailsWith<IllegalArgumentException> {
+        Assertions.assertThrows(IllegalArgumentException::class.java){
             systemFunction(-PI)
         }
 
-        assertFailsWith<IllegalArgumentException> {
+        Assertions.assertThrows(IllegalArgumentException::class.java){
             systemFunction(0.0)
         }
     }
 
     @Test
     fun `test positive`(){
-        assertEquals(1.13524,   systemFunction( 0.2 ), accuracy)
-        assertEquals(3.07092,   systemFunction( 0.4 ), accuracy)
-        assertEquals(-11.5252,  systemFunction( 1.7 ), accuracy)
-        assertEquals(-4.786223, systemFunction( 2.0 ), accuracy)
-        assertEquals(-0.815775, systemFunction( 2.9 ), accuracy)
-        assertEquals(-0.027190, systemFunction( 3.9 ), accuracy)
-        assertEquals(0.494117,  systemFunction( 8.0 ), accuracy)
-        assertEquals(0.547624,  systemFunction( 10.0), accuracy)
+        Assertions.assertEquals(1.13524,   systemFunction( 0.2 ), accuracy)
+        Assertions.assertEquals(3.07092,   systemFunction( 0.4 ), accuracy)
+        Assertions.assertEquals(-11.5252,  systemFunction( 1.7 ), accuracy)
+        Assertions.assertEquals(-4.786223, systemFunction( 2.0 ), accuracy)
+        Assertions.assertEquals(-0.815775, systemFunction( 2.9 ), accuracy)
+        Assertions.assertEquals(-0.027190, systemFunction( 3.9 ), accuracy)
+        Assertions.assertEquals(0.494117,  systemFunction( 8.0 ), accuracy)
+        Assertions.assertEquals(0.547624,  systemFunction( 10.0), accuracy)
 
-        assertFailsWith<IllegalArgumentException> {
+        Assertions.assertThrows(IllegalArgumentException::class.java){
             systemFunction(1.0)
         }
     }

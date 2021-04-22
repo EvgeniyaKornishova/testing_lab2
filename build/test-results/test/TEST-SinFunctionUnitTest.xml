@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="SinFunctionUnitTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2021-04-20T18:00:47" hostname="DESKTOP-BIQATCG" time="0.018">
+<testsuite name="SinFunctionUnitTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2021-04-21T18:57:55" hostname="DESKTOP-BIQATCG" time="0.019">
   <properties/>
   <testcase name="[1] -6.283185" classname="SinFunctionUnitTest" time="0.001"/>
-  <testcase name="[2] -5.235988" classname="SinFunctionUnitTest" time="0.0"/>
-  <testcase name="[3] -3.141593" classname="SinFunctionUnitTest" time="0.0"/>
-  <testcase name="[4] -2.879793" classname="SinFunctionUnitTest" time="0.0"/>
-  <testcase name="[5] -1.570796" classname="SinFunctionUnitTest" time="0.0"/>
+  <testcase name="[2] -5.235988" classname="SinFunctionUnitTest" time="0.001"/>
+  <testcase name="[3] -3.141593" classname="SinFunctionUnitTest" time="0.001"/>
+  <testcase name="[4] -2.879793" classname="SinFunctionUnitTest" time="0.001"/>
+  <testcase name="[5] -1.570796" classname="SinFunctionUnitTest" time="0.001"/>
   <testcase name="[6] -1.256637" classname="SinFunctionUnitTest" time="0.0"/>
-  <testcase name="[7] -0.261799" classname="SinFunctionUnitTest" time="0.0"/>
+  <testcase name="[7] -0.261799" classname="SinFunctionUnitTest" time="0.001"/>
   <testcase name="[8] 0.0" classname="SinFunctionUnitTest" time="0.0"/>
-  <testcase name="[9] -3.665191" classname="SinFunctionUnitTest" time="0.001"/>
-  <testcase name="[10] -1.308996" classname="SinFunctionUnitTest" time="0.001"/>
+  <testcase name="[9] -3.665191" classname="SinFunctionUnitTest" time="0.0"/>
+  <testcase name="[10] -1.308996" classname="SinFunctionUnitTest" time="0.0"/>
   <testcase name="[11] 0" classname="SinFunctionUnitTest" time="0.0"/>
   <testcase name="[12] 0.314159" classname="SinFunctionUnitTest" time="0.0"/>
   <testcase name="[13] 1.308997" classname="SinFunctionUnitTest" time="0.0"/>
   <testcase name="[14] -4.712389" classname="SinFunctionUnitTest" time="0.0"/>
-  <testcase name="[15] -1.570796" classname="SinFunctionUnitTest" time="0.0"/>
-  <testcase name="[16] 1.570796" classname="SinFunctionUnitTest" time="0.0"/>
+  <testcase name="[15] -1.570796" classname="SinFunctionUnitTest" time="0.001"/>
+  <testcase name="[16] 1.570796" classname="SinFunctionUnitTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

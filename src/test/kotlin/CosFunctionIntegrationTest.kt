@@ -64,7 +64,7 @@ class CosFunctionIntegrationTest {
     fun `extra points`() {
         Assertions.assertEquals(1.0,        cos(-2 * PI         ), accuracy)
         Assertions.assertEquals(0.5,        cos(-5 * PI / 3     ), accuracy)
-        Assertions.assertEquals(-1.0,       cos(-PI                ), accuracy)
+        Assertions.assertEquals(-1.0,       cos(-PI             ), accuracy)
         Assertions.assertEquals(1.0,        cos(0.0             ), accuracy)
     }
 }
